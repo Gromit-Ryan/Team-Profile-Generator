@@ -43,7 +43,7 @@ const addManager = () => {
                 },
                 {
                     type: 'input',
-                    name: 'officeNumber';
+                    name: 'officeNumber',
                     message: "Please enter the manager's office number."
                 },
             ])
@@ -88,7 +88,7 @@ const addEmployee = () => {
                     name: 'school',
                     message: "Please enter the Intern's School",
                     when: (input) => input.role === 'Intern'
-                }
+                },
                 {
                     type: 'confirm',
                     name: 'confirmAddEmployee',
