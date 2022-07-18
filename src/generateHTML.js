@@ -99,6 +99,11 @@ generateHTML = (data) => {
                 cardArray.push(internCard);
         }
     })
-    
 
+    const employeeCards = cardArray.join('');
+
+    const generateTeam = generateTeamPage(employeeCards)
+    return generateTeam;
 }
+
+module.exports = generateHTML;
