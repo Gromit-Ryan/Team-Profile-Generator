@@ -1,7 +1,7 @@
 const Manager = require('../lib/employee')
 
 const testEmail = 'email@email.com';
-const testID = 03;
+const testID = 3;
 const testName = 'Gromit';
 const testOffice = 12;
 

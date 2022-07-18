@@ -1,14 +1,14 @@
 const Employee = require('../lib/employee')
 
 const testEmail = 'email@email.com';
-const testID = 03;
+const testID = 3;
 const testName = 'Gromit'
 
 test('Create the employee object', () => {
     const employee = new Employee(testName, testID, testEmail);
 
     expect(employee.name).toEqual('Gromit');
-    expect(employee.id).toEqual('03');
+    expect(employee.id).toEqual(expect.any(Number));
     expect(employee.email).toEqual('email@email.com');
 });
 
@@ -21,7 +21,7 @@ test('Retrieve the name', () => {
 test('Retrieve the id', () => {
     const employee = new Employee(testName, testID, testEmail);
 
-    expect(employee.getId()).toEqual(testID);
+    expect(employee.getId()).toEqual(expect.any(Number));
 });
 
 test('Retrieve the email', () => {
