@@ -9,7 +9,7 @@ test('Create the intern object', () => {
     const employee = new Intern(testName, testID, testEmail, testSchool);
 
     expect(employee.name).toEqual('Gromit');
-    expect(employee.id).toEqual(expect.any(Number));
+    expect(employee.id).toEqual(3);
     expect(employee.email).toEqual('email@email.com');
     expect(employee.school).toEqual('School')
 });
@@ -23,7 +23,7 @@ test('Retrieve the name', () => {
 test('Retrieve the id', () => {
     const employee = new Intern(testName, testID, testEmail, testSchool);
 
-    expect(employee.getId()).toEqual(expect.any(Number));
+    expect(employee.getId()).toEqual(testID);
 });
 
 test('Retrieve the email', () => {

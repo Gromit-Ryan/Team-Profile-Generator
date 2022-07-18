@@ -9,7 +9,7 @@ test('Create the Manager object', () => {
     const employee = new Manager(testName, testID, testEmail, testOffice);
 
     expect(employee.name).toEqual('Gromit');
-    expect(employee.id).toEqual(03);
+    expect(employee.id).toEqual(3);
     expect(employee.email).toEqual('email@email.com');
     expect(employee.school).toEqual(12)
 });
