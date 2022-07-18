@@ -29,3 +29,19 @@ const generateEngineerCard = (engineer) => {
     </div>
     `
 }
+
+const generateInternCard = (intern) => {
+    return `
+    <div class="card employee-card">
+        <div class="card-header bg-danger text-white">
+            <h3 class="card-title">${intern.name}</h3>
+            <h4>Manager</h4>
+        </div>
+        <div class="card-body">
+            <p class="id">ID: ${intern.id}</p>
+            <p class="email">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
+            <p class="school">School: ${intern.school}</p>
+        </div>
+    </div>
+    `
+}
