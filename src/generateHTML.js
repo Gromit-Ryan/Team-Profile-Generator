@@ -83,22 +83,21 @@ const generateTeamPage = (employeeCards) => {
 generateHTML = (data) => {
     cardArray = [];
 
-    data.forEach(data => {
-        let employee = data;
+    for(let i = 0; i < data.length; i++) {
+        let employee = data[i];
         let role = employee.getRole();
 
-        switch(role) {
-            case 'Manager':
+        if(role === 'Manager') {
                 const managerCard = generateManagerCard(employee);
                 cardArray.push(managerCard);
-            case 'Engineer':
+        } else if(role === 'Engineer') {
                 const engineerCard = generateEngineerCard(employee);
                 cardArray.push(engineerCard);
-            case 'Intern':
+        } else if(role === 'Intern') {
                 const internCard = generateInternCard(employee);
                 cardArray.push(internCard);
         }
-    })
+    }
 
     const employeeCards = cardArray.join('');
 

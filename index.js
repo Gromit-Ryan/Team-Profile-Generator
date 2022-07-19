@@ -104,16 +104,18 @@ const addEmployee = () => {
                     case 'Intern':
                         const intern = new Intern(name, id, email, school);
                         cardArray.push(intern);
+                        break;
                     case 'Engineer':
                         const engineer = new Engineer(name, id, email, github);
                         cardArray.push(engineer);
+                        break;
                 }
 
                 if (confirmAddEmployee) {
                     return addEmployee();
                 }
 
-                return;
+                return cardArray;
             })
 }
 
@@ -130,11 +132,11 @@ const writeFile = data => {
 const init = () => {
     addManager()
     .then(addEmployee)
-    .then(cardArray => {
-        return generateHTML(cardArray);
+    .then(data => {
+        return generateHTML(data);
     })
     .then(pageHTML => {
-        return fs.writeFile(pageHTML);
+        return writeFile(pageHTML);
     })
     .catch(err => {
         console.log(err)
