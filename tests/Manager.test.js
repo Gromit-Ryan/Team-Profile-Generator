@@ -1,4 +1,4 @@
-const Manager = require('../lib/employee')
+const Manager = require('../lib/manager')
 
 const testEmail = 'email@email.com';
 const testID = 3;
@@ -11,7 +11,7 @@ test('Create the Manager object', () => {
     expect(employee.name).toEqual('Gromit');
     expect(employee.id).toEqual(3);
     expect(employee.email).toEqual('email@email.com');
-    expect(employee.school).toEqual(12)
+    expect(employee.officeNumber).toEqual(12)
 });
 
 test('Retrieve the name', () => {
@@ -35,7 +35,7 @@ test('Retrieve the email', () => {
 test('Retrieve the github', () => {
     const employee = new Manager(testName, testID, testEmail, testOffice);
 
-    expect(employee.getschool()).toEqual(testOffice)
+    expect(employee.getOffice()).toEqual(testOffice)
 })
 
 test('Retrieve the role', () => {

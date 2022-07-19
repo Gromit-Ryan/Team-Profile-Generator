@@ -1,8 +1,8 @@
-const Engineer = require('../lib/employee')
+const Engineer = require('../lib/engineer');
 
-const testEmail = 'email@email.com';
-const testID = 3;
 const testName = 'Gromit';
+const testID = 3;
+const testEmail = 'email@email.com';
 const testGithub = 'githubUser';
 
 test('Create the engineer object', () => {

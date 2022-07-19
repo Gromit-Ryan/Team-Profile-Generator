@@ -1,8 +1,8 @@
-const Intern = require('../lib/employee')
+const Intern = require('../lib/intern');
 
-const testEmail = 'email@email.com';
-const testID = 3;
 const testName = 'Gromit';
+const testID = 3;
+const testEmail = 'email@email.com';
 const testSchool = 'School';
 
 test('Create the intern object', () => {
@@ -32,10 +32,10 @@ test('Retrieve the email', () => {
     expect(employee.getEmail()).toEqual(testEmail);
 });
 
-test('Retrieve the github', () => {
+test('Retrieve the school', () => {
     const employee = new Intern(testName, testID, testEmail, testSchool);
 
-    expect(employee.getschool()).toEqual(testSchool)
+    expect(employee.getSchool()).toEqual(testSchool)
 })
 
 test('Retrieve the role', () => {
