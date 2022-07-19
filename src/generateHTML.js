@@ -19,7 +19,7 @@ const generateEngineerCard = (engineer) => {
     <div class="card employee-card">
         <div class="card-header bg-danger text-white">
             <h3 class="card-title">${engineer.name}</h3>
-            <h4>Manager</h4>
+            <h4>Engineer</h4>
         </div>
         <div class="card-body">
             <p class="id">ID: ${engineer.id}</p>
@@ -35,7 +35,7 @@ const generateInternCard = (intern) => {
     <div class="card employee-card">
         <div class="card-header bg-danger text-white">
             <h3 class="card-title">${intern.name}</h3>
-            <h4>Manager</h4>
+            <h4>Intern</h4>
         </div>
         <div class="card-body">
             <p class="id">ID: ${intern.id}</p>
