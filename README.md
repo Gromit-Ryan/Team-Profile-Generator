@@ -27,4 +27,4 @@
     # Questions
     N/A
     
-    Link to walkthrough: [https://drive.google.com/file/d/1MvFeCytSck8g9rjoEbawCiis4jkHAsJJ/view](https://drive.google.com/file/d/1BEbl3_YKZ8L5NOoXPZHdE5DPiSFl3B50/view)
+    Link to walkthrough: https://drive.google.com/file/d/1BEbl3_YKZ8L5NOoXPZHdE5DPiSFl3B50/view
